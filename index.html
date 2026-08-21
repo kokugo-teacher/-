@@ -66,20 +66,13 @@ body{
 }
 
 #textbox{
-
     width:95%;
     max-width:1300px;
-
     margin-bottom:20px;
-
     background:rgba(0,0,0,.6);
-
     border-radius:12px;
-
     padding:20px;
-
     display:flex;
-
     gap:20px;
 }
 
@@ -155,6 +148,64 @@ body{
 
     cursor:pointer;
 }
+
+@media screen and (max-width:768px){
+
+body{
+    overflow:auto;
+}
+
+#titleScreen h1{
+    font-size:42px;
+}
+
+#titleScreen h2{
+    font-size:22px;
+}
+
+#startButton{
+    font-size:20px;
+}
+
+#background{
+    align-items:flex-start;
+}
+
+#textbox{
+    margin-top:10px;
+    margin-bottom:10px;
+}
+
+#textbox{
+    flex-direction:column;
+    align-items:center;
+}
+
+#characterArea{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+#character{
+    max-height:240px;
+}
+
+#messageArea{
+    width:100%;
+}
+
+#speaker{
+    font-size:22px;
+}
+
+#text{
+    font-size:22px;
+    line-height:1.6;
+}
+
+}
+
 
 </style>
 </head>
